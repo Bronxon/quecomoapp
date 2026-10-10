@@ -1,0 +1,32 @@
+# Configuración de despliegue en Render (Blueprint).
+# Render la detecta al crear el servicio desde «New → Blueprint».
+#
+# Para la app de Android publicada en Google Play se recomienda un plan que no
+# se suspenda (por ejemplo, «starter»): en el plan gratuito la primera apertura
+# tras un rato sin uso tarda cerca de un minuto. Ver docs/13_android_y_google_play.md.
+services:
+  - type: web
+    name: que-como
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    healthCheckPath: /salud
+    envVars:
+      - key: QUECOMO_ZONA_HORARIA
+        value: America/Hermosillo
+      # 1 = cada visitante tiene sus propios datos de demostración (recomendado en público).
+      - key: QUECOMO_DATOS_POR_SESION
+        value: "1"
+      # Debe coincidir con quecomo.applicationId de android/gradle.properties.
+      - key: QUECOMO_ANDROID_PAQUETE
+        value: mx.quecomo.app
+      # Valores que se capturan en el panel de Render (sync: false = no se guardan aquí).
+      - key: QUECOMO_ANDROID_SHA256
+        sync: false
+      - key: QUECOMO_RESPONSABLE
+        sync: false
+      - key: QUECOMO_CORREO_CONTACTO
+        sync: false
+      - key: QUECOMO_DOMICILIO
+        sync: false
