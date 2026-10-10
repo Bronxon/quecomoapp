@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#12203A">
+  <title>¿Qué Como? · Aviso de privacidad</title>
+  <link rel="icon" href="/recursos/iconos/favicon.png">
+  <style>
+    :root { --fondo: #F5F7FB; --hoja: #FFFFFF; --texto: #12203A; --tenue: #5B6B86; --borde: #E3E9F2; --enlace: #2456A6; }
+    @media (prefers-color-scheme: dark) {
+      :root { --fondo: #0D1626; --hoja: #15213A; --texto: #E6ECF5; --tenue: #AFC0DB; --borde: #22314F; --enlace: #9DBCF0; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--fondo); color: var(--texto);
+           font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.6; }
+    header { background: linear-gradient(180deg, #0E1A31, #12203A 60%, #1A3868); color: #fff; padding: 28px 16px; }
+    header div, main { max-width: 760px; margin: 0 auto; }
+    header h1 { margin: 0; font-size: 1.6rem; letter-spacing: -0.02em; }
+    header p { margin: 6px 0 0; color: #D5DFEF; }
+    main { padding: 24px 16px 48px; }
+    section { background: var(--hoja); border: 1px solid var(--borde); border-radius: 14px; padding: 4px 20px 12px; margin-bottom: 16px; }
+    h2 { font-size: 1.1rem; margin: 18px 0 6px; }
+    p, li { color: var(--texto); }
+    .tenue { color: var(--tenue); font-size: .92rem; }
+    a { color: var(--enlace); }
+    a.volver { display: inline-block; margin-bottom: 16px; min-height: 44px; line-height: 44px; }
+    table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+    th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--borde); }
+  </style>
+</head>
+<body>
+  <header><div>
+    <h1>Aviso de privacidad</h1>
+    <p>¿Qué Como? · Última actualización: $fecha</p>
+  </div></header>
+  <main>
+    <a class="volver" href="/">← Volver a la app</a>
+
+    <section>
+      <h2>1. Responsable</h2>
+      <p><strong>$responsable</strong>, con domicilio en $domicilio, es responsable del tratamiento de
+         los datos que se describen en este aviso. Contacto: <a href="mailto:$correo">$correo</a>.</p>
+    </section>
+
+    <section>
+      <h2>2. Qué es esta app</h2>
+      <p>¿Qué Como? es un <strong>prototipo académico</strong> para buscar, comparar y evaluar
+         restaurantes. Todos los restaurantes, usuarios y reseñas que muestra son <strong>ficticios</strong>.
+         No tiene registro de cuentas, no pide tu nombre, correo, teléfono ni ubicación, y
+         <strong>no procesa pagos</strong>.</p>
+    </section>
+
+    <section>
+      <h2>3. Datos que se tratan</h2>
+      <table>
+        <thead><tr><th>Dato</th><th>Para qué</th><th>Cuánto tiempo</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Lo que escribes en la app (comentarios y calificaciones, consumos de prueba,
+                datos de restaurantes ficticios)</td>
+            <td>Mostrar el funcionamiento de la app <strong>solo a ti</strong>. Nadie más lo ve.</td>
+            <td>En la memoria del servidor mientras uses la app; se borra al cerrarla, tras
+                unas horas sin uso o cuando el servidor se reinicia. No se guarda en bases de datos.</td>
+          </tr>
+          <tr>
+            <td>Datos técnicos de conexión (dirección IP, fecha y hora, tipo de navegador)</td>
+            <td>Entregar la app y mantener su seguridad; los registra el proveedor de alojamiento.</td>
+            <td>Según los plazos de ese proveedor.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="tenue">Te pedimos <strong>no escribir datos personales reales</strong> (tuyos o de otras
+         personas) en los comentarios ni en los formularios.</p>
+      <p>No usamos cookies publicitarias, herramientas de analítica ni publicidad, y no creamos perfiles.
+         No tratamos datos personales sensibles.</p>
+    </section>
+
+    <section>
+      <h2>4. Con quién se comparten</h2>
+      <p>No vendemos ni compartimos tus datos. Para funcionar, la app usa proveedores que los procesan
+         por cuenta nuestra: el servicio de alojamiento del servidor (Render) y el servicio de tipografías
+         de Google (Google Fonts), que recibe tu dirección IP al descargar la fuente de la app.
+         Estos proveedores pueden estar fuera de México.</p>
+    </section>
+
+    <section>
+      <h2>5. Tus derechos</h2>
+      <p>Puedes solicitar el acceso, rectificación, cancelación u oposición (derechos ARCO), o revocar
+         tu consentimiento, escribiendo a <a href="mailto:$correo">$correo</a>. Indica tu solicitud y un
+         medio para responderte; te contestaremos en los plazos que marca la ley. Como la app no guarda
+         datos después de tu sesión, normalmente no conservaremos información que podamos vincular contigo.</p>
+    </section>
+
+    <section>
+      <h2>6. Menores de edad</h2>
+      <p>La app no está dirigida a menores de edad y no recaba intencionalmente sus datos.</p>
+    </section>
+
+    <section>
+      <h2>7. Cambios a este aviso</h2>
+      <p>Publicaremos cualquier cambio en esta misma página, con su fecha de actualización.
+         Si la app empieza a guardar datos personales (por ejemplo, con cuentas de usuario),
+         este aviso se actualizará antes de hacerlo.</p>
+    </section>
+  </main>
+</body>
+</html>
