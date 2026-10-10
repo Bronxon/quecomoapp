@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appName">¿Qué Como?</string>
+    <string name="launcherName">¿Qué Como?</string>
+    <!-- customtabs: si no hay navegador compatible con TWA, abre una pestaña personalizada. -->
+    <string name="fallbackType" translatable="false">customtabs</string>
+</resources>

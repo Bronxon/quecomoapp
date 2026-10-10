@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Paleta «atardecer en el desierto» (src/quecomo/presentacion/tema.py). -->
+<resources>
+    <color name="colorPrimary">#12203A</color>
+    <color name="colorPrimaryDark">#0D1626</color>
+    <color name="navigationColor">#F5F7FB</color>
+    <color name="navigationColorDark">#0D1626</color>
+    <color name="navigationDividerColor">#E3E9F2</color>
+    <color name="navigationDividerColorDark">#22314F</color>
+    <color name="backgroundColor">#12203A</color>
+</resources>
